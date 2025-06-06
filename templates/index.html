@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Persona Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Persona Chatbot</h1>
+
+        <div class="persona-selector">
+            <label for="persona-select">Escolha a Persona:</label>
+            <select id="persona-select">
+                <option value="movie_expert">Perito em Filmes</option>
+                <option value="travel_guide">Guia de Viagens</option>
+                <option value="technical_assistant">Assistente Técnico</option>
+            </select>
+        </div>
+
+        <div id="chat-window" class="chat-window">
+            <div class="message bot-message">Olá! Como posso ajudar hoje?</div>
+        </div>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Digite a sua mensagem..." rows="3"></textarea>
+            <button id="send-button">Enviar</button>
+        </div>
+        <div id="loading-indicator" class="loading-indicator">Digitando...</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
