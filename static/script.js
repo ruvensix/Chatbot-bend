@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const personaSelect = document.getElementById('persona-select');
     const loadingIndicator = document.getElementById('loading-indicator');
 
-    const BACKEND_URL = "https://chatbot-backend-3xcv.onrender.com";
-
+    
     function appendMessage(sender, message) {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message');
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingIndicator.style.display = 'block'; // Show loading
 
         try {
-            const response = await fetch(`${BACKEND_URL}/chat`, { // Chamada para o endpoint do Flask
+            const response = await fetch('/chat', { // Chamada para o endpoint do Flask
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
