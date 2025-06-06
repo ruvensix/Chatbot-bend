@@ -46,7 +46,7 @@ PERSONAS = {
         "headers": {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "YOUR_WEBSITE_URL_HERE", # Substitua pela URL do seu frontend (ex: https://your-chatbot.netlify.app)
+            "HTTP-Referer": "https://chatbot-backend-3xcv.onrender.com/", # Substitua pela URL do seu frontend (ex: https://your-chatbot.netlify.app)
             "X-Title": "My Awesome Chatbot"
         }
     }
