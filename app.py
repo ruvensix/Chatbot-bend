@@ -39,7 +39,7 @@ PERSONAS = {
         }
     },
     "technical_assistant": {
-        "model": "google/gemini-pro", # Exemplo de modelo para OpenRouter (ou pode ser Together/Groq)
+        "model": "google/gemini-pro-1.5", # Exemplo de modelo para OpenRouter (ou pode ser Together/Groq)
         "base_url": "https://openrouter.ai/api/v1/chat/completions", # OpenRouter URL
         "api_key": OPENROUTER_API_KEY,
         "system_message": "Você é um assistente técnico preciso e conciso. Forneça explicações claras, instruções passo a passo e resolva problemas técnicos de forma lógica. Evite divagações e vá direto ao ponto.",
